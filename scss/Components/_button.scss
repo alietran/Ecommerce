@@ -1,5 +1,5 @@
 .btn__primary {
-    margin-top: $mr-10;
+    margin-top: $mr-10 + 0.2rem;
     @include styeButton(
         $color-8,
         $color-1,

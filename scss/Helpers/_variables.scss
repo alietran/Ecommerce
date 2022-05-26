@@ -86,8 +86,9 @@ $lh-2: 1.4;
 $lh-3: 1.9;
 
 // ------------BOX-SHADOW------------------
-$box-shadow-1: rgba(240, 70, 57, 0.2) 0px 12px 28px 0px, rgba(240, 70, 57, 0.1) 3px 3px 4px 2px,
+$box-shadow-2: rgba(240, 70, 57, 0.2) 0px 12px 28px 0px, rgba(240, 70, 57, 0.1) 3px 3px 4px 2px,
   rgba(240, 70, 57, 0.5) 0px 0px 0px 1px inset;
+$box-shadow-1: rgba(240, 70, 57, 0.2) 0 7px 9px 4px;
 
 // ---------- BREAK POINTS ----------------
 $breakpoints: (

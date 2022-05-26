@@ -50,7 +50,7 @@ h6 {
 }
 
 .footer .container {
-  padding: 3rem;
+  padding: 4rem;
   width: 70%;
   margin: 0 auto;
   display: grid;
@@ -152,7 +152,7 @@ h6 {
   width: 688px;
   height: 678px;
   padding-top: 3rem;
-  z-index: 100;
+  z-index: 50;
 }
 
 .banner .container .banner__image img:nth-child(2) {
@@ -242,6 +242,151 @@ h6 {
   margin-left: 1.5rem;
 }
 
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  margin: 0 auto;
+  padding: 2rem 0;
+  align-items: center;
+}
+
+.navbar .container .navbar__logo img {
+  display: inline-block;
+  width: 167px;
+  height: 32px;
+}
+
+.navbar .container .navbar_menu {
+  position: relative;
+}
+
+.navbar .container .navbar_menu-list {
+  display: flex;
+}
+
+.navbar .container .navbar_menu-list .navbar_menu-item {
+  list-style: none;
+  padding-right: 2.3rem;
+}
+
+.navbar .container .navbar_menu-list .navbar_menu-item:hover .mega__nav {
+  display: grid;
+}
+
+.navbar .container .navbar_menu-list .navbar_menu-item a {
+  padding: 20px 0;
+  color: #232323;
+  font-size: 16px;
+}
+
+.navbar .container .navbar_menu-list .navbar_menu-item .mega__nav {
+  position: absolute;
+  z-index: 100;
+  left: -276px;
+  top: 32px;
+  width: 182%;
+  padding: 2rem;
+  background-color: #ffffff;
+  display: grid;
+  display: none;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.navbar .container .navbar_menu-list .navbar_menu-item .mega__nav-item {
+  list-style: none;
+  line-height: 1.9;
+  margin-bottom: 1.5rem;
+}
+
+.navbar .container .navbar_menu-list .navbar_menu-item .mega__nav-item p {
+  font-weight: 600;
+}
+
+.navbar .container .navbar_menu-list .navbar_menu-item .mega__nav-item ul li {
+  list-style: none;
+}
+
+.navbar .container .navbar_menu-list .navbar_menu-item .mega__nav-item ul li a {
+  color: #464646;
+}
+
+.navbar .container .navbar_menu-list .navbar_menu-item .mega__nav .mega__banner-left {
+  background-color: #edf0f5;
+  display: grid;
+  grid-template-columns: 60% 40%;
+  grid-column: 1 / span 2;
+  margin-right: 35px;
+}
+
+.navbar .container .navbar_menu-list .navbar_menu-item .mega__nav .mega__banner-left p {
+  padding: 1rem;
+  color: #000000;
+  font-size: 2.2rem;
+}
+
+.navbar .container .navbar_menu-list .navbar_menu-item .mega__nav .mega__banner-left .btn__primary {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  margin-left: 1.2rem;
+  box-shadow: none;
+}
+
+.navbar .container .navbar_menu-list .navbar_menu-item .mega__nav .mega__banner-right {
+  background-color: #edf0f5;
+  display: grid;
+  grid-template-columns: 60% 40%;
+  grid-column: 3 / span 2;
+}
+
+.navbar .container .navbar_menu-list .navbar_menu-item .mega__nav .mega__banner-right p {
+  padding: 1rem;
+  color: #000000;
+  font-size: 2.2rem;
+}
+
+.navbar .container .navbar_menu-list .navbar_menu-item .mega__nav .mega__banner-right .btn__primary {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  margin-left: 1.2rem;
+  box-shadow: none;
+}
+
+.navbar .container .navbar__option ul {
+  display: flex;
+}
+
+.navbar .container .navbar__option ul li {
+  list-style: none;
+  padding-right: 20px;
+}
+
+.navbar .container .navbar__option ul li a {
+  color: #232323;
+  font-size: 16px;
+}
+
+.navbar .container .navbar__option ul li:nth-child(2) {
+  position: relative;
+}
+
+.navbar .container .navbar__option ul li:nth-child(2) span {
+  color: #ffffff;
+  font-size: 11px;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: -9px;
+  left: 8px;
+  display: flex;
+  justify-content: space-around;
+  background-color: #f04639;
+  line-height: 5px;
+  align-items: center;
+  border-radius: 50%;
+  color: #fff;
+}
+
 .policy__sale .container {
   width: 70%;
   margin: 0 auto;
@@ -293,7 +438,7 @@ h6 {
 
 .policy__sale .sale__banner {
   padding-bottom: 3.75rem;
-  margin: 0 3.5rem;
+  margin: 0 3rem;
   display: grid;
   grid-template-columns: 60% 40%;
 }
@@ -302,7 +447,7 @@ h6 {
   position: relative;
   background-color: #fff1ba;
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 40% 60%;
 }
 
 .policy__sale .sale__banner-left-content {
@@ -312,18 +457,19 @@ h6 {
 }
 
 .policy__sale .sale__banner-left-content p {
-  font-size: 3rem;
+  font-size: 2.6rem;
+  margin-bottom: 3rem;
 }
 
 .policy__sale .sale__banner-left .sale__banner-left-image {
   position: absolute;
   bottom: 0;
-  right: 20px;
+  right: 30px;
 }
 
 .policy__sale .sale__banner-left .sale__banner-left-image img {
-  width: 553px;
-  height: 418px;
+  width: 523px;
+  height: 389px;
 }
 
 .policy__sale .sale__banner-right {
@@ -339,7 +485,8 @@ h6 {
 }
 
 .policy__sale .sale__banner-right-content p {
-  font-size: 3rem;
+  font-size: 2.6rem;
+  margin-bottom: 3rem;
 }
 
 .policy__sale .sale__banner-right .sale__banner-right-image {
@@ -348,8 +495,8 @@ h6 {
 }
 
 .policy__sale .sale__banner-right .sale__banner-right-image img {
-  width: 321px;
-  height: 516px;
+  width: 310px;
+  height: 490px;
 }
 
 .product .container {
@@ -442,29 +589,21 @@ h6 {
 }
 
 .trending__banner-right {
-  background-color: #f1f2f3;
-  display: grid;
-  grid-template-columns: 35% 65%;
+  background-image: url("../../public/CompositeLayer.png");
+  height: 503px;
+  position: relative;
 }
 
 .trending__banner-right-content {
+  width: 40%;
   padding-top: 5.1rem;
   padding-left: 2.6rem;
   font-weight: 500;
+  position: absolute;
 }
 
 .trending__banner-right-content p {
   font-size: 3rem;
-}
-
-.trending__banner-right .trending__banner-right-image {
-  padding-top: 3.1rem;
-  padding-left: 110px;
-}
-
-.trending__banner-right .trending__banner-right-image img {
-  width: 290px;
-  height: 500px;
 }
 
 .best__seller .container {
@@ -625,7 +764,7 @@ h6 {
 }
 
 .newsLetter__form-title {
-  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 7px 25px 8px;
   padding: 5.1rem 10rem;
   text-align: center;
   border-radius: 0.2rem;
@@ -656,7 +795,7 @@ h6 {
 .newsLetter__form-info input {
   width: 70%;
   border: none;
-  height: 47px;
+  height: 40px;
   box-shadow: rgba(149, 157, 165, 0.3) 0px 4px 20px;
   padding: 20px;
   color: #bebebe;
@@ -665,8 +804,9 @@ h6 {
 .newsLetter__form-info button {
   position: absolute;
   right: 110px;
-  top: 6px;
+  top: 3px;
   font-size: 1.1rem;
+  font-size: 16px;
 }
 
 .instagram {
@@ -702,7 +842,7 @@ h6 {
 }
 
 .btn__primary {
-  margin-top: 3.5rem;
+  margin-top: 3.7rem;
   color: #ffffff;
   background-color: #f04639;
   border: 1px solid #f04639;
@@ -710,7 +850,7 @@ h6 {
   font-size: 16px;
   font-weight: 400;
   padding: 1.1rem 1.5rem;
-  box-shadow: rgba(240, 70, 57, 0.2) 0px 12px 28px 0px, rgba(240, 70, 57, 0.1) 3px 3px 4px 2px, rgba(240, 70, 57, 0.5) 0px 0px 0px 1px inset;
+  box-shadow: rgba(240, 70, 57, 0.2) 0 7px 9px 4px;
   cursor: pointer;
 }
 

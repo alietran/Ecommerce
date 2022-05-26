@@ -13,9 +13,8 @@
             padding-left: $pd-5;
             font-weight: 500;
             p {
-                font-size: $fs-2 +0.1rem ;
+                font-size: $fs-2 + 0.1rem;
             }
-            
         }
         .trending__banner-left-image {
             position: absolute;
@@ -28,28 +27,45 @@
         }
     }
     &-right {
-        background-color: $color-11;
-        display: grid;
-        grid-template-columns: 35% 65%;
-
+       background-image: url("../../public/CompositeLayer.png");
+       
+       height: 503px;
+       position: relative;
         &-content {
+            width: 40%;
             padding-top: $pd-15;
             padding-left: $pd-5;
             font-weight: 500;
+            position: absolute;
             p {
                 font-size: $fs-3;
             }
-           
-        }
-        .trending__banner-right-image {
-            padding-top: $pd-8;
-            padding-left: 110px;
-            img {
-                width: 290px;
-                height: 500px;
-            }
         }
     }
+
+    // &-right {
+    //     background-color: $color-11;
+    //     display: grid;
+    //     grid-template-columns: 35% 65%;
+
+    //     &-content {
+    //         padding-top: $pd-15;
+    //         padding-left: $pd-5;
+    //         font-weight: 500;
+    //         p {
+    //             font-size: $fs-3;
+    //         }
+
+    //     }
+    //     // .trending__banner-right-image {
+    //     //     padding-top: $pd-8;
+    //     //     padding-left: 110px;
+    //     //     img {
+    //     //         width: 290px;
+    //     //         height: 500px;
+    //     //     }
+    //     // }
+    // }
 }
 
 // .trending__banner {

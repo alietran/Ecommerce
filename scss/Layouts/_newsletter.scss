@@ -13,7 +13,7 @@
         bottom: 8px;
         background-color: $color-8;
         &-title {
-            box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+            box-shadow: rgba(0,0,0,0.1) 0 7px 25px 8px;
             padding: $pd-15 $pd-17;
             text-align: center;
             border-radius: $border-radius;
@@ -37,7 +37,7 @@
                 // margin-top: 20px;
                 width: 70%;
                 border: none;
-                height: 47px;
+                height: 40px;
                 box-shadow: rgba(149, 157, 165, 0.3) 0px 4px 20px;
                 padding: 20px;
                 color: $color-6;
@@ -45,8 +45,9 @@
             button {
                 position: absolute;
                 right: 110px;
-                top: 6px;
+                top: 3px;
                 font-size: $fs-10;
+                font-size: $font-size-html;
             }
         }
     }

@@ -46,30 +46,30 @@
     // Sale Banner
     .sale__banner {
         padding-bottom: $pd-14;
-        margin: 0 $mr-10;
+        margin: 0 $mr-6;
         display: grid;
         grid-template-columns: 60% 40%;
         &-left {
             position: relative;
             background-color: $color-10;
             display: grid;
-            grid-template-columns: 50% 50%;
+            grid-template-columns: 40% 60%;
             &-content {
                 padding-top: $pd-15;
                 padding-left: $pd-5;
                 font-weight: 500;
                 p {
-                    font-size: $fs-3;
+                    font-size: $fs-2 + 0.1rem;
+                    margin-bottom: $mr-6;
                 }
-                
             }
             .sale__banner-left-image {
                 position: absolute;
                 bottom: 0;
-                right: 20px;
+                right: 30px;
                 img {
-                    width: 553px;
-                    height: 418px;
+                    width: 523px;
+                    height: 389px;
                 }
             }
         }
@@ -83,16 +83,17 @@
                 padding-left: $pd-5;
                 font-weight: 500;
                 p {
-                    font-size: $fs-3;
+                    font-size: $fs-2 + 0.1rem;
+                    margin-bottom: $mr-6;
                 }
-               
             }
             .sale__banner-right-image {
                 padding-top: $pd-8;
                 padding-right: 40px;
+
                 img {
-                    width: 321px;
-                    height: 516px;
+                    width: 310px;
+                    height: 490px;
                 }
             }
         }

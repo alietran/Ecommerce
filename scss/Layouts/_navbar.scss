@@ -1,0 +1,127 @@
+.navbar {
+    .container {
+        display: flex;
+        justify-content: space-between;
+        width: 70%;
+        margin: 0 auto;
+        padding: $pd-4 0;
+        align-items: center;
+        .navbar__logo {
+            img {
+                display: inline-block;
+                width: 167px;
+                height: 32px;
+            }
+        }
+        .navbar_menu {
+            position: relative;
+            &-list {
+                display: flex;
+                .navbar_menu-item {
+                    list-style: none;
+                    padding-right: $pd-4 + 0.3rem;
+                    &:hover .mega__nav {
+                        display: grid;
+                    }
+                    a {
+                        padding: 20px 0;
+                        @include styleText($color-3, $font-size-html);
+                    }
+                    .mega__nav {
+                        position: absolute;
+                        z-index: 100;
+                        left: -276px;
+                        top: 32px;
+                        width: 182%;
+                        padding: $pd-4;
+                        background-color: $color-8;
+                        display: grid;
+                        display: none;
+                        grid-template-columns: repeat(4, 1fr);
+                        &-item {
+                            list-style: none;
+                            line-height: $lh-3;
+                             margin-bottom: $mr-3;
+                            p {
+                                font-weight: 600;
+                            }
+
+                            ul li {
+                                list-style: none;
+                                a {
+                                    color: $color-4;
+                                   
+                                }
+                            }
+                        }
+
+                        .mega__banner-left {
+                            background-color: $color-16;
+                            display: grid;
+                            grid-template-columns: 60% 40%;
+                            grid-column: 1 / span 2;
+                            margin-right: 35px;
+                            p {
+                                padding: $pd-2;
+                                @include styleText($color-2, $fs-1 + 0.2rem);
+                            }
+                            .btn__primary {
+                                margin-top: $mr-3;
+                                padding: $pd-2;
+                                margin-left: $mr-2 + 0.2rem;
+                                 box-shadow: none;
+                            }
+                        }
+                        .mega__banner-right {
+                            background-color: $color-16;
+                            display: grid;
+                            grid-template-columns: 60% 40%;
+                            grid-column: 3 / span 2;
+                             p {
+                                padding: $pd-2;
+                                @include styleText($color-2, $fs-1 + 0.2rem);
+                            }
+                            .btn__primary {
+                                margin-top: $mr-3;
+                                padding: $pd-2;
+                                margin-left: $mr-2 + 0.2rem;
+                                box-shadow: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .navbar__option {
+            ul {
+                display: flex;
+                li {
+                    list-style: none;
+                    padding-right: 20px;
+                    a {
+                        @include styleText($color-3, $font-size-html);
+                    }
+                }
+                li:nth-child(2) {
+                    position: relative;
+                    span {
+                        @include styleText($color-8, $font-size-html - 5px);
+                        width: 20px;
+                        height: 20px;
+                        position: absolute;
+                        top: -9px;
+                        left: 8px;
+                        display: flex;
+                        justify-content: space-around;
+                        background-color: $color-1;
+
+                        line-height: 5px;
+                        align-items: center;
+                        border-radius: 50%;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+}
