@@ -96,15 +96,5 @@
     }
 }
 .btn__secondary {
-    @include styeButton(
-        $color-8,
-        $color-1,
-        $color-1,
-        $border-radius,
-        $font-size-html,
-        $font-weight-normal,
-        $pd-11,
-        $pd-16,
-        none
-    );
+    @include styeButton($color-8, $color-1, $color-1, $border-radius, $fs-5, $font-weight-normal, $pd-11, $pd-16, none);
 }

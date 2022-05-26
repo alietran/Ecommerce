@@ -15,7 +15,7 @@
   cursor: pointer;
 }
 
-@mixin styleSale($color, $bg-color, $border, $border-radius, $fs, $fw, $pd,$lh,$left,$top,$w,$h) {
+@mixin styleSale($color, $bg-color, $border, $border-radius, $fs, $fw, $pd, $lh, $left, $top, $w, $h) {
   color: $color;
   background-color: $bg-color;
   border: 1px solid $border;
@@ -27,9 +27,9 @@
   left: $left;
   top: $top;
   height: $h;
-  width:$w;
-
+  width: $w;
 }
+
 
 @mixin responsive($screen) {
   @if map-has-key($map: $breakpoints, $key: $screen) {

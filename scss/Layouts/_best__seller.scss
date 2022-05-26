@@ -14,60 +14,6 @@
             }
         }
 
-        .best__seller-item {
-            padding: $pd-3;
-            display: grid;
-            text-align: center;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 25px;
-            .card__item {
-                img {
-                    width: 271px;
-                    height: 354px;
-                }
-                .product__img {
-                    position: relative;
-                    display: flex;
-                    justify-content: center;
-                    overflow: hidden;
-                    &:hover .product__button {
-                        // display: block;
-                        opacity: 1;
-                        transform: translateY(0);
-                    }
-                }
-
-                .product__button {
-                    position: absolute;
-                    bottom: 10px;
-                    transform: translateY(150%);
-                    transition: all 0.5s;
-                    // z-index: 10;
-                    opacity: 0;
-                }
-                .card-body {
-                    line-height: $lh-3 - 0.3;
-                    .card-title {
-                        color: $color-5;
-                        font-family: "Gothic A1", sans-serif;
-                        font-weight: 300;
-                    }
-                    .card-text {
-                        color: $color-14;
-                    }
-                    .card-star {
-                        color: $color-12;
-                    }
-                    .card-price {
-                        color: $color-7;
-                        .old__price {
-                            color: $color-5;
-                            text-decoration: line-through;
-                            padding-right: $pd-2;
-                        }
-                    }
-                }
-            }
-        }
+       
     }
 }

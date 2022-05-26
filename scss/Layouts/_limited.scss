@@ -1,0 +1,107 @@
+.limited {
+    margin-top: 75px;
+    &__left {
+        width: 90%;
+        display: grid;
+        grid-template-columns: 65% 30%;
+
+        &-content {
+            margin: $mr-6 0 $mr-6 $mr-6;
+            .btn__secondary {
+                display: block;
+                margin-bottom: $mr-6;
+            }
+            .limited__left-title {
+                font-size: $fs-2 - 0.2rem;
+            }
+            .sale {
+                @include styleText($color-7, $fs-3);
+            }
+        }
+        &-timing {
+            ul {
+                margin: $mr-6 0;
+                display: flex;
+                justify-content: space-between;
+                li {
+                    list-style: none;
+
+                    font-size: $fs-3;
+                    span {
+                        @include styleText($color-7, $fs-10);
+                        padding-left: $pd-11;
+                    }
+                }
+            }
+        }
+    }
+    &__right {
+        position: relative;
+        box-shadow: rgba(0, 0, 0, 0.2) 0 7px 24px 0;
+
+        width: 80%;
+        transform: translate(25%, -45%);
+        z-index: 100;
+        background-color: $color-8;
+        .limited__nav {
+            margin-top: $mr-6;
+            display: flex;
+            justify-content: end;
+            padding: $pd-5 $pd-18 $pd-3 0;
+            & li {
+                list-style: none;
+                padding-left: $pd-3;
+                & a {
+                    font-weight: 400;
+                    @include styleText($color-14, $fs-5);
+                }
+            }
+            .active {
+                position: relative;
+                padding-bottom: 5px;
+                & a {
+                    color: $color-1;
+
+                    &::after {
+                        position: absolute;
+                        content: "";
+                        width: 70%;
+                        height: 1px;
+                        background-color: $color-1;
+                        color: $color-1;
+                        bottom: 0;
+
+                        left: 24px;
+                    }
+                }
+            }
+        }
+
+        .limited__product {
+            width: 70%;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+    .limited__arrow-left {
+        background-color: $color-8;
+        padding: 30px 28px;
+        width: 80px;
+        bottom: 50%;
+        left: 50px;
+        position: absolute;
+        vertical-align: middle;
+        box-shadow: rgba(0, 0, 0, 0.1) 0 1px 8px 0;
+    }
+    .limited__arrow-right {
+        background-color: $color-8;
+        padding: 30px 28px;
+        width: 80px;
+        bottom: 50%;
+        right: 50px;
+        position: absolute;
+        vertical-align: middle;
+        box-shadow: rgba(0, 0, 0, 0.1) 0 1px 8px 0;
+    }
+}

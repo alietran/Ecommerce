@@ -10,9 +10,12 @@
 @import "./Layouts/banner";
 @import "./Layouts/navbar";
 @import "./Layouts/policy__sale";
-@import "./Layouts/prodcut";
+@import "./Layouts/product";
 @import "./Layouts/trending";
 @import "./Layouts/best__seller";
+@import "./Layouts/limited";
+@import "./Layouts/newsletter";
+@import "./Layouts/instagram";
 
 
 
@@ -22,5 +25,5 @@
 
 //components
 @import "./Components/button";
-
+@import "./Components/card";
 //theme
