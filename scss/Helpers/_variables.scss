@@ -1,0 +1,97 @@
+// ---------- COLOR ----------------
+$color-1: #f04639;
+$color-2: #000000;
+$color-3: #232323;
+$color-4: #464646;
+$color-5: #707070;
+$color-6: #bebebe;
+$color-7: #e60023;
+$color-8: #ffffff;
+$color-9: #f6f6f6;
+$color-10: #fff1ba;
+$color-11: #f1f2f3;
+$color-12: #f5b303;
+$color-14: #4b4b4b;
+$color-15: #fdeae6;
+// ---------- FONT ----------------
+$font-size-html: 16px;
+$fs-1: 2rem;
+$fs-2: 2.5rem;
+$fs-3: 3rem;
+$fs-4: 3.2rem;
+$fs-5: 1.3rem;
+$fs-6: 4.5rem;
+$fs-7: 1.44rem;
+$fs-8: 6rem;
+$fs-9: 3.5rem;
+$fs-10: 1.1rem;
+$fs-11: 0.9rem;
+$font-weight-bold: bold;
+$font-weight-normal: normal;
+$font-weight-400: 400;
+$font-weight-700: 700;
+
+// $ff-1: "Roboto", sans-serif;
+// $ff-2: "Gothic A1", sans-serif;
+
+// ---------- PADDING ----------------
+$pd-1: 0.5rem;
+$pd-2: 1rem;
+
+$pd-3: 1.5rem;
+$pd-4: 2rem;
+$pd-5: 2.6rem;
+$pd-6: 3rem;
+
+$pd-7: 4rem;
+$pd-8: 3.1rem;
+$pd-9: 3.375rem;
+$pd-10: 8.4rem;
+$pd-11: 0.375rem;
+$pd-12: 7rem;
+$pd-14: 3.75rem;
+$pd-15: 5.1rem;
+$pd-16: 1.1rem;
+// $pd-11: 6rem;
+// ---------- MARGIN ----------------
+$mr-1: 0.5rem;
+$mr-2: 1rem;
+$mr-3: 1.5rem;
+$mr-4: 2rem;
+$mr-5: 2.5rem;
+$mr-6: 3rem;
+$mr-7: 4rem;
+$mr-8: 4.7rem;
+$mr-9: 9rem;
+$mr-10: 3.5rem;
+$mr-11: 4.7rem;
+// ---------- BORDER ----------------
+$border-1: 1px;
+$border-2: 1.5px;
+$border-3: 2px;
+$border-4: 2.5px;
+
+$border-radius: 0.2rem;
+$border-radius-1: 1.5rem;
+$border-radius-2: 2rem;
+$border-radius-3: 2.5rem;
+$border-radius-4: 50%;
+// ---------- LINE-HEIGHT ----------------
+$line-height-normal: normal;
+$lh-1: 1.1;
+$lh-2: 1.4;
+$lh-3: 1.9;
+
+// ------------BOX-SHADOW------------------
+$box-shadow-1: rgba(240, 70, 57, 0.2) 0px 12px 28px 0px, rgba(240, 70, 57, 0.1) 3px 3px 4px 2px,
+  rgba(240, 70, 57, 0.5) 0px 0px 0px 1px inset;
+
+// ---------- BREAK POINTS ----------------
+$breakpoints: (
+  "extra-large": 1200px,
+  "large": 992px,
+  "medium": 768px,
+  "small": 576px,
+  "screen-1": 920px,
+  "screen-2": 600px,
+);

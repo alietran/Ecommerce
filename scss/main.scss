@@ -1,0 +1,26 @@
+@import "./Helpers/variables";
+@import "./Helpers/mixin"; //tái sd, gọi ở bất kỳ đâu và thay đổi biến dễ dàng
+
+//thu vien
+
+@import "./Base/reset";
+
+//layout
+@import "./Layouts/footer";
+@import "./Layouts/banner";
+@import "./Layouts/navbar";
+@import "./Layouts/policy__sale";
+@import "./Layouts/prodcut";
+@import "./Layouts/trending";
+@import "./Layouts/best__seller";
+
+
+
+//page
+
+@import "./Pages/home";
+
+//components
+@import "./Components/button";
+
+//theme

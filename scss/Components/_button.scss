@@ -1,0 +1,110 @@
+.btn__primary {
+    margin-top: $mr-10;
+    @include styeButton(
+        $color-8,
+        $color-1,
+        $color-1,
+        $border-radius,
+        $font-size-html,
+        $font-weight-400,
+        $pd-16,
+        $pd-3,
+        $box-shadow-1
+    );
+}
+.btn__white {
+    margin-top: $mr-10;
+    @include styeButton(
+        $color-3,
+        transparent,
+        $color-3,
+        $border-radius,
+        $font-size-html,
+        $font-weight-400,
+        $pd-16,
+        $pd-3,
+        none
+    );
+}
+.product__button {
+    .btn__card {
+        @include styeButton(
+            $color-8,
+            $color-1,
+            $color-1,
+            $border-radius,
+            $font-size-html,
+            $font-weight-normal,
+            $pd-11,
+            $pd-16,
+            none
+        );
+    }
+    .btn__detail {
+        @include styeButton(
+            $color-8,
+            $color-1,
+            $color-1,
+            $border-radius,
+            $font-size-html,
+            $font-weight-normal,
+            $pd-11,
+            $pd-1,
+            none
+        );
+        margin-left: 5px;
+    }
+}
+
+.img__sale {
+    p {
+        position: absolute;
+        @include styleSale(
+            $color-8,
+            $color-7,
+            $color-7,
+            50%,
+            $font-size-html,
+            $font-weight-700,
+            $pd-1,
+            30px,
+            10px,
+            10px,
+            50px,
+            50px
+        );
+    }
+}
+.img__new {
+    text-align: center;
+    p {
+        position: absolute;
+        @include styleSale(
+            $color-8,
+            $color-3,
+            $color-3,
+            50%,
+            $font-size-html,
+            $font-weight-700,
+            $pd-1,
+            30px,
+            10px,
+            10px,
+            50px,
+            50px
+        );
+    }
+}
+.btn__secondary {
+    @include styeButton(
+        $color-8,
+        $color-1,
+        $color-1,
+        $border-radius,
+        $font-size-html,
+        $font-weight-normal,
+        $pd-11,
+        $pd-16,
+        none
+    );
+}

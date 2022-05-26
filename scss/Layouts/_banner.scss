@@ -1,0 +1,115 @@
+.banner {
+    background-color: #edf0f5;
+    position: relative;
+    overflow: hidden;
+    .container {
+        width: 70%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 48% 49% 3%;
+        .banner__title {
+            .banner__title--heading {
+                font-size: $fs-6;
+                padding-top: $pd-12;
+                padding-bottom: $pd-11;
+                color: $color-3;
+            }
+            p:nth-child(2) {
+                @include styleText($color-5, $fs-7);
+            }
+            .btn__primary {
+                margin-top: $mr-8;
+            }
+        }
+        .banner__image {
+            // grid-column: 2 / span 2;
+            position: relative;
+            display: flex;
+            img:nth-child(1) {
+                width: 688px;
+                height: 678px;
+                padding-top: $pd-6;
+                z-index: 100;
+            }
+
+            img:nth-child(2) {
+                width: 405px;
+                height: 405px;
+                position: absolute;
+                opacity: 0.5;
+                top: 33px;
+            }
+            img:nth-child(3) {
+                width: 364px;
+                height: 364px;
+                position: absolute;
+                bottom: 32px;
+                left: -19px;
+                opacity: 0.5;
+            }
+            img:nth-child(4) {
+                width: 364px;
+                height: 364px;
+                position: absolute;
+                bottom: 32px;
+                right: -19px;
+                opacity: 0.5;
+            }
+            img:nth-child(5) {
+                width: 592px;
+                height: 590px;
+                position: absolute;
+                bottom: -26px;
+
+                opacity: 0.5;
+            }
+        }
+        .pagenation {
+            position: absolute;
+            bottom: 22px;
+            @include styleText($color-5, $fs-7);
+            // font-weight: 400;
+            span:first-child {
+                vertical-align: sub;
+                @include styleText($color-2, $fs-1);
+            }
+        }
+    }
+    .banner__media {
+        position: absolute;
+        top: 120px;
+        right: 80px;
+        // margin-left: 120px;
+        & i {
+            font-size: 17px;
+            display: flex;
+            flex-direction: column;
+            padding: 30px;
+        }
+    }
+    .circle {
+        height: 168px;
+        width: 168px;
+        position: absolute;
+        right: -55px;
+        opacity: 0.23000000417232513;
+        top: 10px;
+    }
+
+    .arrow {
+        position: absolute;
+        right: 110px;
+        bottom: 97px;
+        font-size: 15px;
+        // margin-left: $mr-3;
+        & i:first-child {
+            background-color: $color-8;
+            padding: 30px 28px;
+        }
+        & i:nth-child(2) {
+            background-color: $color-8;
+            padding: 30px 28px;
+            margin-left: $mr-3;
+        }
+    }
+}

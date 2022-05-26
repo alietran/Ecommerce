@@ -1,0 +1,100 @@
+.policy__sale {
+    .container {
+        width: 70%;
+        margin: 0 auto;
+        padding: $pd-14 0;
+        // Policy
+        .policy__box {
+            margin-right: -$mr-11;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            .policy__box--content {
+                display: flex;
+
+                .img_policy {
+                    margin-right: $mr-2;
+                }
+                .ship {
+                    width: 48px;
+                    height: 31px;
+                }
+                .payment {
+                    width: 26px;
+                    height: 35px;
+                }
+                .money {
+                    width: 44px;
+                    height: 39px;
+                }
+                .support {
+                    width: 33px;
+                    height: 38px;
+                }
+                .policy__text {
+                    // line-height: $lh-3;
+                    p:first-child {
+                        padding-bottom: $pd-2;
+                    }
+
+                    & span {
+                        @include styleText($color-5, $font-size-html);
+                    }
+                }
+            }
+        }
+    }
+    // Sale Banner
+    .sale__banner {
+        padding-bottom: $pd-14;
+        margin: 0 $mr-10;
+        display: grid;
+        grid-template-columns: 60% 40%;
+        &-left {
+            position: relative;
+            background-color: $color-10;
+            display: grid;
+            grid-template-columns: 50% 50%;
+            &-content {
+                padding-top: $pd-15;
+                padding-left: $pd-5;
+                font-weight: 500;
+                p {
+                    font-size: $fs-3;
+                }
+                
+            }
+            .sale__banner-left-image {
+                position: absolute;
+                bottom: 0;
+                right: 20px;
+                img {
+                    width: 553px;
+                    height: 418px;
+                }
+            }
+        }
+        &-right {
+            background-color: $color-11;
+            display: grid;
+            grid-template-columns: 35% 65%;
+
+            &-content {
+                padding-top: $pd-15;
+                padding-left: $pd-5;
+                font-weight: 500;
+                p {
+                    font-size: $fs-3;
+                }
+               
+            }
+            .sale__banner-right-image {
+                padding-top: $pd-8;
+                padding-right: 40px;
+                img {
+                    width: 321px;
+                    height: 516px;
+                }
+            }
+        }
+    }
+}
