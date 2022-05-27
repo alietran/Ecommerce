@@ -10,7 +10,6 @@
             grid-template-columns: repeat(4, 1fr);
             .policy__box--content {
                 display: flex;
-
                 .img_policy {
                     margin-right: $mr-2;
                 }
@@ -68,8 +67,8 @@
                 bottom: 0;
                 right: 30px;
                 img {
-                    width: 523px;
-                    height: 389px;
+                    width: 490px;
+                    height: 396px;
                 }
             }
         }
@@ -90,10 +89,124 @@
             .sale__banner-right-image {
                 padding-top: $pd-8;
                 padding-right: 40px;
-
+                padding-left: 30px;
                 img {
                     width: 310px;
                     height: 490px;
+                }
+            }
+        }
+    }
+}
+.policy__sale {
+    // RESPONSIVE
+    @media screen and (min-width: 1273px) and (max-width: 1320px) {
+        .container {
+            padding-bottom: 0;
+            .policy__box {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                justify-items: flex-start;
+                .policy__box--content {
+                    padding-bottom: $pd-6;
+                }
+            }
+        }
+        .sale__banner {
+            &-left {
+                grid-template-columns: 46% 53%;
+                display: grid;
+                .sale__banner-left-image {
+                    img {
+                        width: 452px;
+                        height: 396px;
+                    }
+                }
+            }
+            &-right {
+                grid-template-columns: 38% 62%;
+
+                .sale__banner-right-image {
+                    img {
+                        width: 452px;
+                        height: 396px;
+                    }
+                }
+            }
+        }
+    }
+    @include responsive("extra-large") {
+        .container {
+            padding-bottom: 0;
+            .policy__box {
+                display: grid;
+                justify-items: flex-start;
+                grid-template-columns: repeat(2, 1fr);
+                .policy__box--content {
+                    padding-bottom: $pd-6;
+
+                    .policy__text {
+                        & span {
+                            @include styleText($color-5, $font-size-html - 2px);
+                        }
+                    }
+                }
+            }
+        }
+        .sale__banner {
+            &-left {
+                grid-template-columns: 54% 46%;
+                &-content {
+                    padding-top: $pd-15;
+                    padding-left: $pd-5;
+                    p {
+                        font-size: $fs-2;
+                    }
+                }
+                .sale__banner-left-image {
+                    img {
+                        width: 290px;
+                        height: 314px;
+                    }
+                }
+            }
+            &-right {
+                grid-template-columns: 42% 58%;
+
+                &-content {
+                    padding-top: $pd-15;
+                    padding-left: $pd-5;
+
+                    p {
+                        font-size: $fs-2;
+                    }
+                }
+                .sale__banner-right-image {
+                    padding-top: $pd-8;
+                    padding-right: 18px;
+                    padding-left: 25px;
+                    img {
+                        width: 250px;
+                        height: 400px;
+                    }
+                }
+            }
+        }
+    }
+    @include responsive("large") {
+        .container {
+            padding-bottom: 0;
+            .policy__box {
+                display: grid;
+                justify-items: flex-start;
+                grid-template-columns: repeat(2, 1fr);
+                .policy__box--content {
+                    padding-bottom: $pd-6;
+                    .policy__text {
+                        & span {
+                            @include styleText($color-5, $font-size-html - 2px);
+                        }
+                    }
                 }
             }
         }

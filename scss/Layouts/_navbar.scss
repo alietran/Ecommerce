@@ -30,10 +30,10 @@
                     .mega__nav {
                         position: absolute;
                         z-index: 100;
-                        left: -276px;
+                        left: -46%;
                         top: 32px;
-                        width: 182%;
-                        padding: $pd-4;
+                        width: 178%;
+                        padding: 5%;
                         background-color: $color-8;
                         display: grid;
                         display: none;
@@ -41,7 +41,7 @@
                         &-item {
                             list-style: none;
                             line-height: $lh-3;
-                             margin-bottom: $mr-3;
+                            margin-bottom: $mr-3;
                             p {
                                 font-weight: 600;
                             }
@@ -50,7 +50,6 @@
                                 list-style: none;
                                 a {
                                     color: $color-4;
-                                   
                                 }
                             }
                         }
@@ -69,7 +68,7 @@
                                 margin-top: $mr-3;
                                 padding: $pd-2;
                                 margin-left: $mr-2 + 0.2rem;
-                                 box-shadow: none;
+                                box-shadow: none;
                             }
                         }
                         .mega__banner-right {
@@ -77,7 +76,7 @@
                             display: grid;
                             grid-template-columns: 60% 40%;
                             grid-column: 3 / span 2;
-                             p {
+                            p {
                                 padding: $pd-2;
                                 @include styleText($color-2, $fs-1 + 0.2rem);
                             }
@@ -93,16 +92,21 @@
             }
         }
         .navbar__option {
-            ul {
+            .navbar__option-list {
                 display: flex;
-                li {
+                padding-right: 25px;
+                .navbar__option-item {
                     list-style: none;
                     padding-right: 20px;
                     a {
                         @include styleText($color-3, $font-size-html);
+                        img {
+                            width: 16px;
+                            height: 16px;
+                        }
                     }
                 }
-                li:nth-child(2) {
+                .navbar__option-item:nth-child(2) {
                     position: relative;
                     span {
                         @include styleText($color-8, $font-size-html - 5px);
@@ -119,6 +123,162 @@
                         align-items: center;
                         border-radius: 50%;
                         color: #fff;
+                    }
+                }
+            }
+        }
+        // RESPONSIVE
+        @media screen and (min-width: 1200px) and (max-width: 1268px) {
+            .navbar_menu {
+                &-list {
+                    .navbar_menu-item {
+                        .navbar_menu-title {
+                            font-size: $font-size-html - 2px;
+                        }
+                        
+                    }
+                }
+            }
+        }
+        //1200px
+        @include responsive("extra-large") {
+            .navbar__logo {
+                img {
+                    vertical-align: middle;
+                    display: inline-block;
+                    width: 125px;
+                    height: 25px;
+                }
+            }
+            .navbar_menu {
+                &-list {
+                    .navbar_menu-item {
+                        padding-right: $pd-3 - 0.2rem;
+                        .navbar_menu-title {
+                            font-size: $font-size-html - 3px;
+                        }
+                      
+                    }
+                }
+            }
+            .navbar__option {
+                .navbar__option-list {
+                    padding-right: 25px;
+                    .navbar__option-item {
+                        a {
+                            @include styleText($color-3, $font-size-html);
+                            img {
+                                width: 16px;
+                                height: 16px;
+                            }
+                        }
+                    }
+                    .navbar__option-item:nth-child(2) {
+                        span {
+                            @include styleText($color-8, $font-size-html - 5px);
+                            width: 18px;
+                            height: 18px;
+                            line-height: 5px;
+                        }
+                    }
+                }
+            }
+        }
+
+        @include responsive("large") {
+            .navbar__logo {
+                img {
+                    vertical-align: middle;
+                    display: inline-block;
+                    width: 115px;
+                    height: 20px;
+                }
+            }
+            .navbar_menu {
+                &-list {
+                    .navbar_menu-item {
+                        padding-right: $pd-2;
+                        .navbar_menu-title {
+                            font-size: $font-size-html - 4px;
+                        }
+                    }
+                }
+            }
+        }
+        @media screen and (min-width: 769px) and (max-width: 895px) {
+            .navbar__logo {
+                img {
+                    vertical-align: middle;
+                    display: inline-block;
+                    width: 100px;
+                    height: 16px;
+                }
+            }
+            .navbar_menu {
+                &-list {
+                    .navbar_menu-item {
+                        padding-right: $pd-2 - 0.3rem;
+                        .navbar_menu-title {
+                            font-size: $font-size-html - 6px;
+                        }
+                    }
+                }
+            }
+            .navbar__option {
+                .navbar__option-list {
+                    padding-right: 20px;
+                    .navbar__option-item {
+                        padding-right: 18px;
+                        a {
+                            @include styleText($color-3, $font-size-html);
+                            img {
+                                width: 14px;
+                                height: 14px;
+                            }
+                        }
+                    }
+                    .navbar__option-item:nth-child(2) {
+                        span {
+                            @include styleText($color-8, $font-size-html - 8px);
+                            width: 16px;
+                            height: 16px;
+                            line-height: 5px;
+                        }
+                    }
+                }
+            }
+        }
+        @include responsive("medium") {
+            .navbar__logo {
+                img {
+                    vertical-align: middle;
+                    display: inline-block;
+                    width: 125px;
+                    height: 25px;
+                }
+            }
+            .navbar_menu {
+                display: none;
+            }
+            .navbar__option {
+                .navbar__option-list {
+                    padding-right: 25px;
+                    .navbar__option-item {
+                        a {
+                            @include styleText($color-3, $font-size-html);
+                            img {
+                                width: 16px;
+                                height: 16px;
+                            }
+                        }
+                    }
+                    .navbar__option-item:nth-child(2) {
+                        span {
+                            @include styleText($color-8, $font-size-html - 5px);
+                            width: 18px;
+                            height: 18px;
+                            line-height: 5px;
+                        }
                     }
                 }
             }

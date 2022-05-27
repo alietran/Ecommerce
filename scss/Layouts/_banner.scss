@@ -112,4 +112,20 @@
             margin-left: $mr-3;
         }
     }
+
+    // RESPONSIVE
+    // @media screen and (min-width: 1200px) and (max-width: 1263px) {
+    //     .arrow {
+    //         right: 50px;
+    //         bottom: 97px;
+    //         font-size: 15px;
+    //         & i:first-child {
+    //             padding: 26px 26px;
+    //         }
+    //         & i:nth-child(2) {
+    //             padding: 26px 26px;
+    //             margin-left: $mr-3;
+    //         }
+    //     }
+    // }
 }
